@@ -21,9 +21,7 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            width: 100%;
-
-                       
+            width: 100%;                       
         }
         .grid-portafolio{
             display: grid;
@@ -40,8 +38,7 @@
             color: white;
             thead th{
                 color: rgb(3, 125, 196);
-            }
-            
+            }           
 
         }
         .perfil{            
@@ -69,10 +66,9 @@
         .proyectos{
             grid-column: span 2;
             color: rgb(6, 94, 226);
-            img{
-                border-radius: 100%;
-                width: 100px;
-            }
+            flex-direction: column;
+            text-align: center;
+            
             img{
                 max-width: 400px;
             }
@@ -154,20 +150,37 @@
                 </table>
             </section>
             <section class="panel proyectos">
-                <table id="enlace">
-
-                </table>
+                <h2>MIS PROYECTOS</h2>
+                <table>
+                    <tr>                    
+                        <td><img src="/hojavida.png" alt="mi hoja de vida"></td>
+                        <td><img src="/eventos.png" alt="tarjeta de evento"></td>
+                    </tr>
+                    <tr>
+                        <th>Mi Hoja De Vida</th>
+                        <th>Tarjeta Conferencistas</th>                
+                    </tr>                
+                    <tr>
+                        <td>"Proyecto web diseñado para estructurar información profesional 
+                            y datos de contacto de manera clara y limpia. Durante su desarrollo, 
+                            practiqué el uso de etiquetas semánticas en HTML y la aplicación de estilos 
+                            estructurados para lograr una presentación formal y ordenada."
+                        </td>
+                        <td>"Interfaz interactiva enfocada en la presentación de ponentes y eventos de 
+                            tecnología de forma visualmente atractiva. En este proyecto puse en práctica 
+                            la organización de elementos en tarjetas, el diseño responsivo y la maquetación 
+                            web con CSS."
+                        </td>
+                    </tr>
+                    <tr id="enlace">
+                        <td><a href="https://juliiands.github.io/hoja-de-vida/" target="_blank">Ver hoja de vida aqui</a></td>
+                        <td><a href="https://juliiands.github.io/Conferencistas/" target="_blank">Ver tarjeta de eventos aqui</a></td>
+                    </tr>
+                
+               </table>
 
             </section>
-        </section>
-        
-
-
-
-
-
-
-    
+        </section>    
     
     </main>
 
