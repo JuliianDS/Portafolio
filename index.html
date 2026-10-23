@@ -17,12 +17,18 @@
             background-color: rgba(0, 0, 0, 0.4);
             color: white;
             justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+
                        
         }
         .grid-portafolio{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            gap: 10px;
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
@@ -30,23 +36,51 @@
 
         .panel{
             background-color: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(2px);
+            color: white;
+            thead th{
+                color: rgb(3, 125, 196);
+            }
+            
 
         }
-        .panel img{
-            max-width: 250px;
+        .perfil{            
+            td{
+                color: white;
+                vertical-align: top;
+                width: 50%;
+                padding: 10px;
+            }
+            img{
+                max-width: 150px;
+            }
         }
-        .perfil{
-            
-            display: flex;
-            justify-content: center; 
-            align-items: center;
-            width: 100%;
-        }
-        .habilidades{
-            
+        .habilidades{            
+            td{
+                color: white;
+                vertical-align: top;
+                width: 50%;
+                padding: 10px;
+            }
+            img{
+                max-width: 150px;
+            }            
         }
         .proyectos{
-            
+            grid-column: span 2;
+            color: rgb(6, 94, 226);
+            img{
+                border-radius: 100%;
+                width: 100px;
+            }
+            img{
+                max-width: 400px;
+            }
+        }
+        
+        #menu{
+            background-color: aliceblue;
+            border: 1px;
         }
     </style>
 </head>
@@ -54,7 +88,11 @@
     <main>
         <header class="portafolio-header">
             <h1>Bienvenido a mi Portafolio</h1>
-            <h2>Julian D Salazar</h2>            
+            <h2>Julian D Salazar A / Junior en Desarrollo de Sofware</h2>
+            <nav id="menu">
+                <a href="#enlace">Mis Proyectos____</a>
+                <a href="#yo">Sobre Mí</a>
+            </nav>            
         </header>
         <section class="grid-portafolio">
             <section class="panel perfil">
@@ -67,15 +105,27 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td></td>
-                            <td></td>
+                            <td>¡Hola! Soy Julian
+                                Apasionado por la tecnología, el desarrollo de 
+                                software y la resolución de problemas mediante 
+                                código. Actualmente me estoy formando como 
+                                Aprendiz en Riwi, fortaleciendo mis habilidades 
+                                técnicas en programación y creando soluciones 
+                                digitales funcionales.                                
+                            </td>
+                            <td>
+                                Me caracteriza la curiosidad constante por 
+                                aprender nuevas herramientas, adaptarme a los 
+                                retos tecnológicos y construir proyectos limpios 
+                                y eficientes. ¡Bienvenido a mi espacio digital!
+                            </td>
                         </tr>
                        
                     </tbody>
                 </table>
             </section>
             <section class="panel habilidades">
-                <table>
+                <table id="yo">
                     <thead>
                         <tr>
                             <th><img src="./yo.jpeg" alt="Aprendiz de Riwi"></th>
@@ -84,20 +134,28 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th></th>
-                            <td></td>
+                            <td><ul>
+                                <h2><strong>SKILLS / Habilidades</strong></h2>
+                                <li>Lenguajes y Bases: HTML5, CSS3, JavaScript (Fundamentos).</li>
+                                <li>Control de Versiones: Git y GitHub (Flujo de trabajo básico).</li>
+                                <li>Metodologías: Resolución lógica de problemas y adaptabilidad ágil.</li>
+                                <li>Enfoque: Maquetación web adaptable (Responsive Design) y código limpio.</li>
+                            </ul></td>                            
+                            <td><ul>
+                                <h2>EXPERIENCIA / Desarrollo Junior</h2>
+                                <li>Empresa: TechSolutions Lab (Proyecto de práctica) — Período: 2026</li>
+                                <li>Funciones: Maquetación y desarrollo de interfaces web orientadas a la 
+                                    experiencia de usuario, aplicación de diseño responsivo mediante CSS 
+                                    moderno y gestión de versiones de código con Git para proyectos colaborativos.
+                                </li>
+                            </ul></td>
                         </tr>
-
                     </tbody>
                 </table>
             </section>
             <section class="panel proyectos">
-                <table>
-                    <thead>
-                        <tr>
-                            <th><img src="./proye.jpg" alt=""></th>
-                        </tr>
-                    </thead>
+                <table id="enlace">
+
                 </table>
 
             </section>
