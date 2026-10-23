@@ -3,9 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio</title>
+    <style>
+        body{
+            background-image: url(fondo.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        .portafolio-header{
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            justify-content: center;
+                       
+        }
+        .grid-portafolio{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .panel{
+            background-color: rgba(0, 0, 0, 0.4);
+
+        }
+        .panel img{
+            max-width: 250px;
+        }
+        .perfil{
+            
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            width: 100%;
+        }
+        .habilidades{
+            
+        }
+        .proyectos{
+            
+        }
+    </style>
 </head>
 <body>
-    <h1>Estas en Portafolio</h1>
+    <main>
+        <header class="portafolio-header">
+            <h1>Bienvenido a mi Portafolio</h1>
+            <h2>Julian D Salazar</h2>            
+        </header>
+        <section class="grid-portafolio">
+            <section class="panel perfil">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><img src="./rostro.jpg" alt="voceto de mi perfil"></th>
+                            <th>MI PERFIL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </section>
+            <section class="panel habilidades">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><img src="./yo.jpeg" alt="Aprendiz de Riwi"></th>
+                            <th>MIS HABILIDADES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+            <section class="panel proyectos">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><img src="./proye.jpg" alt=""></th>
+                        </tr>
+                    </thead>
+                </table>
+
+            </section>
+        </section>
+        
+
+
+
+
+
+
+    
+    
+    </main>
+
 </body>
 </html>
