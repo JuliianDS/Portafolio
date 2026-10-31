@@ -1,91 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <title>Portafolio</title>
-    <style>
-        body{
-            background-image: url(fondo.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        
-        .portafolio-header{
-            background-color: rgba(0, 0, 0, 0.4);
-            color: white;
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            width: 100%;                       
-        }
-        .grid-portafolio{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
 
-        .panel{
-            background-color: rgba(0, 0, 0, 0.4);
-            backdrop-filter: blur(4px);
-            color: white;
-            thead th{
-                color: rgb(3, 125, 196);
-            }           
-
-        }
-        .perfil{            
-            td{
-                color: white;
-                vertical-align: top;
-                width: 50%;
-                padding: 10px;
-            }
-            img{
-                max-width: 150px;
-            }
-        }
-        .habilidades{            
-            td{
-                color: white;
-                vertical-align: top;
-                width: 50%;
-                padding: 10px;
-            }
-            img{
-                max-width: 150px;
-            }            
-        }
-        .proyectos{
-            grid-column: span 2;
-            color: rgb(6, 94, 226);
-            flex-direction: column;
-            text-align: center;
-            
-            img{
-                max-width: 400px;
-            }
-            td{
-                color: white;
-                vertical-align: top;
-                width: 50%;
-                padding: 10px;
-            } 
-        }
-        
-        #menu{
-            background-color: aliceblue;
-            border: 1px;
-        }
-    </style>
 </head>
+
 <body>
     <main>
         <header class="portafolio-header">
@@ -94,35 +18,35 @@
             <nav id="menu">
                 <a href="#enlace">Mis Proyectos____</a>
                 <a href="#yo">Sobre Mí</a>
-            </nav>            
+            </nav>
         </header>
         <section class="grid-portafolio">
             <section class="panel perfil">
                 <table>
                     <thead>
                         <tr>
-                            <th><img src="./rostro.jpg" alt="voceto de mi perfil"></th>
                             <th>MI PERFIL</th>
+                            <th><img src="./img/yo.jpeg" alt="voceto de mi perfil" class="mt-4"></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>¡Hola! Soy Julian
-                                Apasionado por la tecnología, el desarrollo de 
-                                software y la resolución de problemas mediante 
-                                código. Actualmente me estoy formando como 
-                                Aprendiz en Riwi, fortaleciendo mis habilidades 
-                                técnicas en programación y creando soluciones 
-                                digitales funcionales.                                
+                                Apasionado por la tecnología, el desarrollo de
+                                software y la resolución de problemas mediante
+                                código. Actualmente me estoy formando como
+                                Aprendiz en Riwi, fortaleciendo mis habilidades
+                                técnicas en programación y creando soluciones
+                                digitales funcionales.
                             </td>
                             <td>
-                                Me caracteriza la curiosidad constante por 
-                                aprender nuevas herramientas, adaptarme a los 
-                                retos tecnológicos y construir proyectos limpios 
+                                Me caracteriza la curiosidad constante por
+                                aprender nuevas herramientas, adaptarme a los
+                                retos tecnológicos y construir proyectos limpios
                                 y eficientes. ¡Bienvenido a mi espacio digital!
                             </td>
                         </tr>
-                       
+
                     </tbody>
                 </table>
             </section>
@@ -130,65 +54,181 @@
                 <table id="yo">
                     <thead>
                         <tr>
-                            <th><img src="./yo.jpeg" alt="Aprendiz de Riwi"></th>
                             <th>MIS HABILIDADES</th>
+                            <th><img src="./img/exp.jpg" alt="Aprendiz de Riwi" class="mt-4"></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><ul>
-                                <h2><strong>SKILLS / Habilidades</strong></h2>
-                                <li>Lenguajes y Bases: HTML5, CSS3, JavaScript (Fundamentos).</li>
-                                <li>Control de Versiones: Git y GitHub (Flujo de trabajo básico).</li>
-                                <li>Metodologías: Resolución lógica de problemas y adaptabilidad ágil.</li>
-                                <li>Enfoque: Maquetación web adaptable (Responsive Design) y código limpio.</li>
-                            </ul></td>                            
-                            <td><ul>
-                                <h2>EXPERIENCIA / Desarrollo Junior</h2>
-                                <li>Empresa: TechSolutions Lab (Proyecto de práctica) — Período: 2026</li>
-                                <li>Funciones: Maquetación y desarrollo de interfaces web orientadas a la 
-                                    experiencia de usuario, aplicación de diseño responsivo mediante CSS 
-                                    moderno y gestión de versiones de código con Git para proyectos colaborativos.
-                                </li>
-                            </ul></td>
+                            <td>
+                                <ul>
+                                    <h2><strong>SKILLS / Habilidades</strong></h2>
+                                    <li>Lenguajes y Bases: HTML5, CSS3, JavaScript (Fundamentos).</li>
+                                    <li>Control de Versiones: Git y GitHub (Flujo de trabajo básico).</li>
+                                    <li>Metodologías: Resolución lógica de problemas y adaptabilidad ágil.</li>
+                                    <li>Enfoque: Maquetación web adaptable (Responsive Design) y código limpio.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <h2>EXPERIENCIA / Desarrollo Junior</h2>
+                                    <li>Empresa: TechSolutions Lab (Proyecto de práctica) — Período: 2026</li>
+                                    <li>Funciones: Maquetación y desarrollo de interfaces web orientadas a la
+                                        experiencia de usuario, aplicación de diseño responsivo mediante CSS
+                                        moderno y gestión de versiones de código con Git para proyectos colaborativos.
+                                    </li>
+                                </ul>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </section>
-            <section class="panel proyectos">
-                <h2>MIS PROYECTOS</h2>
-                <table>
-                    <tr>                    
-                        <td><img src="/hojavida.png" alt="mi hoja de vida"></td>
-                        <td><img src="/eventos.png" alt="tarjeta de evento"></td>
-                    </tr>
-                    <tr>
-                        <th>Mi Hoja De Vida</th>
-                        <th>Tarjeta Conferencistas</th>                
-                    </tr>                
-                    <tr>
-                        <td>"Proyecto web diseñado para estructurar información profesional 
-                            y datos de contacto de manera clara y limpia. Durante su desarrollo, 
-                            practiqué el uso de etiquetas semánticas en HTML y la aplicación de estilos 
-                            estructurados para lograr una presentación formal y ordenada."
-                        </td>
-                        <td>"Interfaz interactiva enfocada en la presentación de ponentes y eventos de 
-                            tecnología de forma visualmente atractiva. En este proyecto puse en práctica 
-                            la organización de elementos en tarjetas, el diseño responsivo y la maquetación 
-                            web con CSS."
-                        </td>
-                    </tr>
-                    <tr id="enlace">
-                        <td><a href="https://juliiands.github.io/hoja-de-vida/" target="_blank">Ver hoja de vida aqui</a></td>
-                        <td><a href="https://juliiands.github.io/Conferencistas/" target="_blank">Ver tarjeta de eventos aqui</a></td>
-                    </tr>
-                
-               </table>
 
-            </section>
-        </section>    
-    
+        </section>
+        <section class="container proyectos">
+            <div class="panel mb-1">
+                <h2>Mis proyectos</h2>
+                <p>Explora los proyectos.</p>
+            </div>
+            <article>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card h-100 ">
+                            <img src="./img/hojavida_mdl.jpg" alt="vista previa de mi hoja de vida"
+                                class="img-fluid card-img-top">
+
+                            <div class="card-body">
+                                <span class="etiqueta">TL Robin</span>
+                                <h3>Mi hoja de vida</h3>
+                                <p>Página web para presentar mi perfil y experiencia.</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary btn-mb-2 " data-bs-toggle="modal"
+                                    data-bs-target="#modalProyecto1">
+                                    Ver Proyecto
+                                </button>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="./img/eventos_mdl.jpg" alt="vista previa de Conferencistas"
+                                class="img-fluid card-img-top">
+
+                            <div class="card-body">
+                                <span class="etiqueta">TL Robin</span>
+                                <h3>Pag Conferencistas</h3>
+                                <p>Replica de Página Conferencistas.</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary d-flex" data-bs-toggle="modal"
+                                    data-bs-target="#modalProyecto_C">
+                                    Ver Proyecto
+                                </button>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="./img/modular_mdl.png" alt="vista previa de Conferencistas"
+                                class="img-fluid card-img-top">
+
+                            <div class="card-body">
+                                <span class="etiqueta">Moodle Desarrollo</span>
+                                <h3>Pagina Modular 3</h3>
+                                <p>Pagina donde integramos 3 pag modulares.</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalProyecto_MDLAR">
+                                    Ver Proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </article>
+            <article class="mt-4 mb-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="./img/" alt="vista previa de ?" class="img-fluid card-img-top">
+
+                            <div class="card-body">
+                                <span class="etiqueta">TL Robin</span>
+                                <h3>?</h3>
+                                <p>?</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#modalProyecto_?">
+                                    Ver Proyecto
+                                </button>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="./img/" alt="vista previa de ?" class="img-fluid card-img-top">
+
+                            <div class="card-body">
+                                <span class="etiqueta">TL Robin</span>
+                                <h3>?</h3>
+                                <p>?</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalProyecto_?">
+                                    Ver Proyecto
+                                </button>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="./img/" alt="vista previa de ?" class="img-fluid card-img-top">
+
+                            <div class="card-body">
+                                <span class="etiqueta">Moodle Desarrollo</span>
+                                <h3>?</h3>
+                                <p>?</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalProyecto_?">
+                                    Ver Proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </article>
+
+        </section>
+
+
     </main>
 
+    <div id="contenedor-modales"></div>
+    <script src="./modal/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
