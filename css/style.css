@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     background-position: center;
@@ -6,7 +6,7 @@ body{
     background-attachment: fixed;
 }
 
-.portafolio-header{
+.portafolio-header {
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
     justify-content: center;
@@ -14,9 +14,10 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;                       
+    width: 100%;
 }
-.grid-portafolio{
+
+.grid-portafolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -25,7 +26,7 @@ body{
     margin: 0 auto;
 }
 
-.panel{
+.panel {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.4);
@@ -33,63 +34,74 @@ body{
     color: white;
     padding: 20px;
     border-radius: 8px;
-    thead th{
+
+    thead th {
         color: rgb(3, 125, 196);
         text-align: center;
-    }           
+    }
 
 }
-.perfil{            
-    td{
+
+.perfil {
+    td {
         color: white;
         vertical-align: top;
         width: 50%;
         padding: 10px;
     }
-    img{
+
+    img {
         max-width: 200px;
     }
 }
-.habilidades{            
-    td{
+
+.habilidades {
+    td {
         color: white;
         vertical-align: top;
         width: 50%;
         padding: 10px;
     }
-    img{
+
+    img {
         max-width: 200px;
-    }            
+    }
 }
-.proyectos{
+
+.proyectos {
     color: rgb(6, 94, 226);
     flex-direction: column;
     text-align: center;
     max-width: 1200px;
     margin: 20px;
-    
-    
-    img{
+
+
+    img {
         max-width: 400px;
     }
-    td{
+
+    td {
         color: white;
         vertical-align: top;
         width: 50%;
         padding: 10px;
     }
-    h3{
+
+    h3 {
         color: rgb(6, 94, 226);
     }
 }
 
-#menu{
+#menu {
     background-color: aliceblue;
     border: 1px;
 }
-.card{
-    background-color: rgba(0, 0, 0, 0.8) !important; /* Tu color oscuro */
-  color: #ffffff !important;            /* Texto blanco */
-  border: 1px solid #333333 !important;
-  border-radius: 8px;
+
+.card {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    /* Tu color oscuro */
+    color: #ffffff !important;
+    /* Texto blanco */
+    border: 1px solid #333333 !important;
+    border-radius: 8px;
 }
