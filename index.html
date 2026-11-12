@@ -16,8 +16,8 @@
             <h1>Bienvenido a mi Portafolio</h1>
             <h2>Julian D Salazar A / Junior en Desarrollo de Sofware</h2>
             <nav id="menu">
-                <a href="#enlace">Mis Proyectos____</a>
-                <a href="#yo">Sobre Mí</a>
+                <a href="#proyectos" class="btn btn-secondary mx-4">Mis Proyectos</a>
+                <a href="#yo" class="btn btn-secondary ">Sobre Mí</a>
             </nav>
         </header>
         <section class="grid-portafolio">
@@ -87,12 +87,12 @@
         </section>
         <section class="container proyectos">
             <div class="panel mb-1">
-                <h2>Mis proyectos</h2>
+                <h2 id="proyectos">Mis proyectos</h2>
                 <p>Explora los proyectos.</p>
             </div>
             <article>
                 <div class="row">
-                    <div class="col-md-4">                           <!-- hoja de vida -->
+                    <div class="col-md-3"> <!------------------------------------------ hoja de vida ------------->
                         <div class="card h-100 ">
                             <img src="./img/hojavida_mdl.jpg" alt="vista previa de mi hoja de vida"
                                 class="img-fluid card-img-top">
@@ -112,8 +112,8 @@
                             </div>
                         </div>
 
-                    </div> 
-                    <div class="col-md-4">                          <!-- conferencistas -->
+                    </div>
+                    <div class="col-md-3"> <!------------------------------------------------ conferencistas ------->
                         <div class="card h-100">
                             <img src="./img/eventos_mdl.jpg" alt="vista previa de Conferencistas"
                                 class="img-fluid card-img-top">
@@ -134,7 +134,7 @@
                         </div>
 
                     </div>
-                    <div class="col-md-4">                    <!-- modular 3 pag -->
+                    <div class="col-md-3"> <!---------------------------------------------- modular 3 pag ------------>
                         <div class="card h-100">
                             <img src="./img/modular_mdl.png" alt="vista previa de pagina"
                                 class="img-fluid card-img-top">
@@ -152,13 +152,7 @@
                             </div>
                         </div>
                     </div>
-
-
-                </div>
-            </article>                    
-            <article class="mt-4 mb-4">                    <!-- web eventos -->
-                <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3"><!-------------------------------------------- web de eventos grupal ----->
                         <div class="card h-100">
                             <img src="./img/w-e-g_mdl.png" alt="vista previa de web de eventos"
                                 class="img-fluid card-img-top">
@@ -179,7 +173,14 @@
                         </div>
 
                     </div>
-                    <div class="col-md-4">                            <!-- Freelance boostrap -->
+
+                </div>
+
+            </article>
+            <article class="mt-4 mb-4">
+                <div class="row">
+
+                    <div class="col-md-2"> <!---------------------------------- Freelance boostrap -------->
                         <div class="card h-100">
                             <img src="./img/bootstrap_mdl.png" alt="vista previa de pagina"
                                 class="img-fluid card-img-top">
@@ -200,14 +201,14 @@
                         </div>
 
                     </div>
-                    <div class="col-md-4">                               <!-- Rueda Libre  -->
+                    <div class="col-md-2"> <!------------------------------------ Rueda Libre  ------------->
                         <div class="card h-100">
-                            <img src="./img/RuedaL_mdl.png" alt="vista previa de pag rueda libre" class="img-fluid card-img-top">
+                            <img src="./img/RuedaL_mdl.png" alt="vista previa de pag" class="img-fluid card-img-top">
 
                             <div class="card-body">
                                 <span class="etiqueta">Moodle Desarrollo</span>
                                 <h3>Rueda Libre</h3>
-                                <p>" Activida de Moodle, se aplican todos los conocimientos 
+                                <p>" Activida de Moodle, se aplican todos los conocimientos
                                     adquiridos en estas semanas "</p>
 
                                 <!-- Button trigger modal -->
@@ -219,6 +220,44 @@
                         </div>
                     </div>
 
+                    <div class="col-md-2"> <!---------------------------------- pag hamburguesas  ----------->
+                        <div class="card h-100">
+                            <img src="./img/hamburguesa_MDL.jpg" alt="vista previa de pag "
+                                class="img-fluid card-img-top">
+
+                            <div class="card-body">
+                                <span class="etiqueta">Moodle Desarrollo</span>
+                                <h3>Menu de Hamburguesas</h3>
+                                <p>" Actividad en clase, menu de hamburguesas solo
+                                    con boostrap"
+                                </p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalProyecto_HB">
+                                    Ver Proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"> <!---------------------------------- pag   ----------->
+                        <div class="card h-100">
+                            <img src="./img/" alt="vista previa de pag " class="img-fluid card-img-top">
+
+                            <div class="card-body">
+                                <span class="etiqueta">Moodle Desarrollo</span>
+                                <h3>?</h3>
+                                <p> ?
+                                </p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalProyecto_">
+                                    Ver Proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </article>
